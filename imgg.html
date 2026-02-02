@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="parahomee.css">
+	<link rel="stylesheet" type="text/css" href="img.css">
+	<title></title>
+</head>
+<style type="text/css">
+	.btn4{
+		color: #fff;
+		background: transparent;
+		border: 3px solid  #fff;
+		border-radius: 6px;
+		width: 120px;
+		height: 50px;
+		cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: .8s;
+    margin-top: 10px;
+    margin-right: -10px;
+/*    padding-left: 10px;*/
+	}
+	.btn4:hover{
+		color: black;
+		background: white;
+
+	}
+</style>
+
+
+<body>
+	<header>
+	<h2 class="logo">Logo</h2>
+	<div class="toggle"></div>
+	<a href="parahome.html"><button class="btn4">Home</button></a>
+	<ul class="navigation">
+		
+		
+		<li><button class="btnlogin-popup">Login</button></li>
+	</ul>
+</header>
+
+<div class="container">
+	<span class="close-icon">
+		<ion-icon name="close-sharp"></ion-icon>
+	</span>
+	
+  <div class="form-box content2">
+    <h2>Login</h2>
+    <form action="#">
+      <div class="user-details">
+        <div class="input-box">
+        	<span class="icon">
+          	<ion-icon name="mail-sharp"></ion-icon>
+          </span>
+          <span class="details">Email</span>
+          
+          <input type="email" placeholder="Enter your email" required>
+
+
+
+          
+        </div>
+        <div class="input-box">
+        	<span class="icon">
+        		<ion-icon name="lock-closed"></ion-icon>
+        	</span>
+          <span class="details">Password</span>
+          <input type="password" placeholder="Enter your password" required>
+          
+        </div>
+        <div class="remember-forgot">
+        	<label>
+        		<input type="checkbox">
+        		Remember me
+        	</label><br>
+        	<a href="#">Forgot password?</a>
+        </div> 
+        
+        <div class="button">
+          <input type="submit" value="Login">
+        </div>
+        <div class="login-register">
+				  <p>Don't have an account?<a href="#" class="register-link">Register</a></p> 
+        </div> 
+      </div>
+    </form> 
+  </div>
+  <div class="form-box content1">
+    <h2>Registration</h2>
+    <form action="#">
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">Full Name</span>
+          <input type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Username</span>
+          <input type="text" placeholder="Enter your username" required>
+        </div>  
+        <div class="input-box">
+          <span class="details">Email</span>
+          <input type="text" placeholder="Enter your email" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Phone Number</span>
+          <input type="text" placeholder="Enter your number" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Password</span>
+          <input type="text" placeholder="Enter your password" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Confirm Password</span>
+          <input type="text" placeholder="Confirm your password" required>
+        </div>
+      </div>
+      <div class="remember-forgot">
+      	<label>
+      		<input type="checkbox">I agree to terms & conditions
+      	</label>
+      </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+        <div class="login-register">
+				  <p>Already have an account?<a href="#" class="login-link">Login</a></p> 
+        </div> 
+    </form> 
+  </div>
+</div>
+
+	
+<script type="text/javascript" src="parahomeee.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

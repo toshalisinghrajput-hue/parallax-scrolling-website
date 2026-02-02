@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 2px black;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header .logo{
+    font-size: 2em;
+    color: #fff;
+    pointer-events: none;
+    margin-right: 550px;
+    font-family: cursive;
+}
+header .logo:hover{
+    color: deeppink;
+    background-color: black;
+}
+
+
+header .navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header .navigation li{
+    list-style: none;
+    margin-left: 10px;
+}
+
+header .navigation .btnlogin-popup{
+  width: 120px;
+  height: 50px;
+  background: transparent;
+  border: 3px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-right: 30px;
+  transition: .8s;
+  margin-top: 10px;
+  margin-right: 320px;
+  
+
+}
+header .navigation .btnlogin-popup:hover{
+    background: #fff;
+    color: #162938;
+    
+}
+header .navigation a{
+/*    list-style: none;*/
+    text-decoration: none;
+    position: relative;
+    font-size: 1.3em;
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 20px;
+    margin: 5px 0;
+    font-weight: 600;
+    display: inline-block;
+}
+header .navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 4px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .8s;
+}
+header .navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+/*.navigation a:hover{
+    background: lightskyblue;
+    color: #FFF;
+}*/
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 102.4vh;
+    
+}
+#text{
+    position: relative;
+    font-size: 6em;
+    color: #fff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, .7);
+    margin-bottom: 100px;
+    font-family: calibri;
+
+
+}
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    /*margin-bottom: 0;
+    padding-bottom: 0px;
+    border-spacing: 1px;*/
+
+
+}
+.sec{
+    position: relative;
+    padding: 20px;
+    background: #600c5c;
+    margin-bottom: 10px ;
+/*    margin-top: 0%;*/
+
+}
+/*.sec h2{
+    font-size: 3em;
+    color: aliceblue;
+    margin-bottom: 10px;
+    text-align: center;
+}*/
+#text1{
+    position: relative;
+    text-align: left;
+    font-size: 3em;
+    color: #fff;
+    font-family: calibri ;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+    margin-bottom: 150px;
+/*    margin-bottom: 100px;*/
+
+}
+/*.sec p{
+    font-size: 1em;
+    color: aliceblue;
+    font-weight: 300;
+}*/
+.formm{
+    position: relative;
+    width: 400px;
+    height: 440px;
+
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    align-items: center;
+    /*text-align: center;
+    align-content: center;*/
+    box-align: center;
+    display: flex;
+    justify-content: center;
+}
+.row{
+    margin-top: -40px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    margin-bottom: 300px;
+}
+.row1{
+    flex-basis: 31%;
+    background: #8c2781;
+    border-radius: 8px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+/*    align-items: center;*/
+    transition: 0.5s;
+   /* width: 990px;
+    height: 500px;*/
+}
+h3{
+    text-align: center;
+    margin-top: 5px;
+}
+.row1:hover{
+    box-shadow: 0 0 20px 3px #c66ab5;
+
+
+}
+/*h3:hover{
+    outline: white;
+}*/
+/*.formm .login{
+    width: 100px;
+    padding: 40px;
+}*/
+/*.im{
+    width: 20%;
+    height: 10%;
+}*/
+@media only screen and (max-width:992px)
+{
+    header
+    {
+        padding: 15px;
+    }
+    header .logo{
+        font-size: 1.25em;
+    }
+    header .navigation{
+        display: none;
+    }
+    
+    .toggle{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url(menu4.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    z-index: 1000;   
+    }
+    .toggle.active{
+    background: url(close2.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    }
+    header .navigation.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #600c5c;
+    flex-direction: column;
+    }
+    header .navigation li a{
+/*    list-style: none;*/
+    text-decoration: none;
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 5px 0;
+    font-weight: 600;
+    display: inline-block;
+
+
+    }
+    .sec{
+        padding: 20px;
+    }
+    #text1{
+        font-size: 30px;
+    }
+    #text{
+        font-size: 3.5em;
+        margin-bottom: 310px;
+    }
+    .parallax{
+        margin-bottom: -178px;
+    }
+}
+
+
+.flip-card{
+  background-color: transparent;
+  margin-bottom: 20px;
+  margin-left: 18px;
+  width: 400px;
+  height: 200px;
+  border-radius: 2px;
+/*  border: 1px solid #f1f1f1;*/
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.6s;
+  transform-style: preserve-3d;
+
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+  
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front{
+  background-color: #bbb;
+  color: #fff;
+  border-color: white;
+}
+
+/* Style the back side */
+.flip-card-back{
+  background-color: #600c5c;
+  color: white;
+  border-radius: 5px;
+  transform: rotateY(180deg);
+  margin-top: 10px;
+/*  border: 5px solid #800080;*/
+  box-shadow: #800080 rgba(0, 0, 0, 1.0);
+}
+.flip-card-back h1 {
+    color: #fff;
+    margin-top: 30px;
+}
+h1.h11{
+    text-align: center;
+    color: #fff;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+footer{
+    background-color: #600c5c ;
+    margin-top: -30px;
+
+}
+footer .navigation a{
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    position: relative;
+    font-size: 0.9em;
+/*    color: #fff;*/
+    padding: 6px 18px;
+    border-radius: 20px;
+    margin: 5px 0;
+    font-weight: 600;
+    display: inline-block;
+    padding-left: 70px;
+
+}
+footer h2{
+    color: #fff;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 15px;
+/*    margin-left: 220px;*/
+
+}
+footer .foot1{
+/*    margin-top: -60px;*/
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    margin-bottom: 10px;
+}
+footer .foot2{
+    flex-basis: 50%;
+    background: transparent;
+/*    border-radius: 0px;*/
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+/*    justify-content: space-between;*/
+}
+footer .navigation li{
+    list-style: none;
+    text-align: center;
+}
+.foot2 span.insta{
+    color: #fff;
+    font-size: 2.1em;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    margin-left: 110px;
+    margin-top: -10px;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: -10px;
+    justify-content: center;
+    position: absolute;
+/*    display: flex;*/
+    margin-bottom: 10px;
+    z-index: 1;
+/*    padding-left: 4PX;*/
+}
+.fot{
+    color: #fff;
+    
+/*    margin-bottom: 30px;*/
+    background-color: #600c5c;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.fot li{
+    list-style: none;
+    display: flex;
+    margin-left: 10px;
+    display: inline-block;
+}
+.fot p{
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+/*    font-size: 1.3em;*/
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 20px;
+    margin: 5px 0;
+    padding-bottom: 200px;
+    font-weight: 600;
+    justify-content: space-between;
+
+}
+.fot{
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+    width: 100%;
+    border: 2px #fff;
+    padding: 10px 50px;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+
+}
